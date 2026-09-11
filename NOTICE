@@ -1,0 +1,26 @@
+qr-code-free.org — a free, fully client side QR code generator
+https://qr-code-free.org · https://github.com/spidfire/qr-code-free-org
+
+Copyright 2026 Djurre de Boer and the qr-code-free.org contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+------------------------------------------------------------------------
+
+Third-party code: none. This project has no dependencies at runtime and no
+build step. The QR encoder in assets/js/qr.js was written for this project
+from the specification; it is not derived from another implementation.
+
+"QR Code" is a registered trademark of DENSO WAVE INCORPORATED, which is not
+affiliated with this project and does not endorse it. The symbol format is
+standardised as ISO/IEC 18004 and free to use.

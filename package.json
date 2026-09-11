@@ -1,0 +1,18 @@
+{
+  "name": "qr-code-free-org",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A free, open source, fully client side QR code generator — qr-code-free.org",
+  "homepage": "https://qr-code-free.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spidfire/qr-code-free-org.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test test/",
+    "images": "node tools/make-images.mjs",
+    "serve": "python3 -m http.server 8080"
+  },
+  "keywords": ["qr", "qr-code", "generator", "static-site", "client-side"]
+}

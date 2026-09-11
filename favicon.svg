@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="qr-code-free.org">
+  <rect width="32" height="32" rx="7" fill="#4f46e5"/>
+  <g fill="#fff">
+    <path d="M6 6h8v8H6V6Zm2.2 2.2v3.6h3.6V8.2H8.2Z"/>
+    <path d="M18 6h8v8h-8V6Zm2.2 2.2v3.6h3.6V8.2h-3.6Z"/>
+    <path d="M6 18h8v8H6v-8Zm2.2 2.2v3.6h3.6v-3.6H8.2Z"/>
+    <path d="M18 18h3.2v3.2H18V18Zm4.8 0H26v2h-3.2v-2ZM18 22.8h3.2V26H18v-3.2Zm4.8 1.6H26V26h-3.2v-1.6Z"/>
+  </g>
+</svg>

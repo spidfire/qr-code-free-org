@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free QR Code Generator — No Sign-up, No Tracking | qr-code-free.org</title>
+<meta name="description" content="Create QR codes in your browser for links, Wi-Fi, contact cards, e-mail and more. Custom frames, colours and logos. Download PNG, transparent PNG, JPG, WebP, SVG, PDF and EPS. Free, open source, nothing is uploaded.">
+<link rel="canonical" href="https://qr-code-free.org/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qr-code-free.org/">
+<meta property="og:site_name" content="qr-code-free.org">
+<meta property="og:title" content="Free QR Code Generator — no sign-up, no tracking">
+<meta property="og:description" content="Links, Wi-Fi, vCard, e-mail and more. Frames, colours and logos. Download PNG, transparent PNG, JPG, WebP, SVG, PDF and EPS. Runs entirely in your browser.">
+<meta property="og:image" content="https://qr-code-free.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="qr-code-free.org — a free, open source QR code generator">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free QR Code Generator — no sign-up, no tracking">
+<meta name="twitter:description" content="Frames, colours, logos and PNG, JPG, WebP, SVG, PDF and EPS downloads. Open source and fully client side.">
+<meta name="twitter:image" content="https://qr-code-free.org/assets/og-image.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://qr-code-free.org/#website",
+      "url": "https://qr-code-free.org/",
+      "name": "qr-code-free.org",
+      "description": "A free, open source, fully client side QR code generator.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "qr-code-free.org QR Code Generator",
+      "url": "https://qr-code-free.org/",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Any browser",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Generate QR codes for links, Wi-Fi, contact cards, e-mail, SMS, WhatsApp, calendar events and locations. Customise frames, shapes, colours and logos, then download PNG, transparent PNG, JPG, WebP, SVG, PDF or EPS. Everything runs in the browser; no data is uploaded.",
+      "isAccessibleForFree": true,
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "softwareHelp": "https://github.com/spidfire/qr-code-free-org",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "featureList": [
+        "QR codes for links, text, e-mail, phone, SMS, WhatsApp, Wi-Fi, vCard, calendar events and locations",
+        "Customisable frames with your own caption",
+        "Module and eye shapes, custom colours, logo in the centre",
+        "PNG, transparent PNG, JPG, WebP, SVG, PDF and EPS download",
+        "Preview the exact file each format produces before downloading it",
+        "Works offline and uploads nothing"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are these QR codes really free, also for commercial use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The codes you create are yours to use anywhere, including on products, packaging and advertising. There is no account, no watermark, no scan limit and no expiry. A QR code is a data format, not something anyone can licence to you." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do the QR codes expire or stop working?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The code contains your link or text directly, so it keeps working as long as the destination exists. Nothing on this site is involved when someone scans it, so the code cannot be switched off or broken by us." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you track scans or store what I generate?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The whole generator runs in your browser: your text, logo and settings never leave your device. There is no analytics script, no cookie and no server that could count scans." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which file format should I download?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Use PDF or SVG for anything printed, because vector files stay sharp at any size and PDF is what most print shops ask for. Use PNG for screens, websites and documents, transparent PNG when the code sits on a coloured surface, and WebP when file size on your own website matters. Use JPG only when a system refuses everything else: it cannot store transparency and adds compression noise around the edges of the modules. EPS is there for older print workflows that still specify it." }
+        },
+        {
+          "@type": "Question",
+          "name": "How small can a QR code be printed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Keep each module (the smallest square) at least 0.4 mm, and keep the whole code at least 2 by 2 cm for arm's length scanning. As a rule of thumb the code should be at least one tenth of the distance it is scanned from: 10 cm wide for a one metre distance, 50 cm wide for five metres." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I put a logo in the middle of a QR code?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, within limits. Error correction lets a code survive damage: roughly 7 percent at level L, 15 percent at M, 25 percent at Q and 30 percent at H. Cover no more than about 15 percent of the area, keep the three corner squares clear, and raise the error correction level to Q or H when you add a logo. Always test the result with more than one phone." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the same link produce a different looking code each time?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The encoder picks one of eight mask patterns, the pattern that best avoids large blocks of one colour and shapes that confuse scanners. A change in the length of your data or in the error correction level can change that choice, so the pattern looks different even though it scans to the same text." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are there no dynamic QR codes or scan statistics here?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Both need a server that every scan passes through, which means hosting costs, accounts and a link that dies if that server does. This site is deliberately a static page. If you want to be able to change a destination later, point the code at a short URL on your own domain and redirect from there: then you stay in control." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#generator">Skip to the generator</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+          <path d="M3 3h7v7H3V3Zm2 2v3h3V5H5Zm9-2h7v7h-7V3Zm2 2v3h3V5h-3ZM3 14h7v7H3v-7Zm2 2v3h3v-3H5Zm9-2h3v3h-3v-3Zm5 0h2v2h-2v-2Zm-5 5h3v2h-3v-2Zm5 0h2v2h-2v-2Z"/>
+        </svg>
+      </span>
+      <span class="brand-text">qr-code-free<span class="brand-dim">.org</span></span>
+    </a>
+    <nav class="header-nav" aria-label="Page sections">
+      <a href="#size">Size</a>
+      <a href="#contrast">Contrast</a>
+      <a href="#faq">FAQ</a>
+      <a class="gh" href="https://github.com/spidfire/qr-code-free-org" rel="noopener">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-2.92-.89-2.92-2.86 0-.86.31-1.57.82-2.12-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a5.6 5.6 0 0 1 1.5-.2c.51 0 1.02.07 1.5.2 1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.55.82 1.25.82 2.12 0 1.98-1.15 2.66-2.93 2.86.3.26.56.76.56 1.54 0 1.11-.01 2-.01 2.27 0 .21.15.46.55.38A7.99 7.99 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <span>Source</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Free QR code generator</h1>
+      <p class="lede">Links, Wi-Fi, contact cards and more — with frames, colours and your logo. Download <strong>PNG</strong> (with a transparent background if you want), <strong>JPG</strong>, <strong>WebP</strong>, <strong>SVG</strong>, <strong>PDF</strong> or <strong>EPS</strong>. Everything happens in this browser tab: nothing is uploaded, nothing is tracked, nothing expires.</p>
+      <ul class="badges">
+        <li>No sign-up</li>
+        <li>No watermark</li>
+        <li>No scan limits</li>
+        <li>Works offline</li>
+        <li>Apache-2.0 open source</li>
+      </ul>
+    </div>
+
+    <noscript>
+      <p class="notice notice--warn">This generator builds QR codes in your own browser, so it needs JavaScript. Nothing is sent anywhere — you can read every line of the source at <a href="https://github.com/spidfire/qr-code-free-org">github.com/spidfire/qr-code-free-org</a>.</p>
+    </noscript>
+
+    <section class="app" id="generator" aria-label="QR code generator">
+      <div class="col col--build">
+
+        <section class="card" aria-labelledby="step1">
+          <h2 class="step" id="step1"><span class="step-num">1</span> What should it do?</h2>
+          <div class="type-picker" id="type-picker" role="radiogroup" aria-label="QR code content type"></div>
+          <div class="fields" id="fields"></div>
+          <p class="hint" id="type-hint"></p>
+        </section>
+
+        <section class="card" aria-labelledby="step2">
+          <h2 class="step" id="step2"><span class="step-num">2</span> Make it yours</h2>
+          <div class="tabs" id="design-tabs" role="tablist" aria-label="Design options">
+            <button role="tab" id="tab-btn-frame" aria-controls="tab-frame" aria-selected="true" data-tab="frame">Frame</button>
+            <button role="tab" id="tab-btn-style" aria-controls="tab-style" aria-selected="false" data-tab="style" tabindex="-1">Shape &amp; colour</button>
+            <button role="tab" id="tab-btn-logo" aria-controls="tab-logo" aria-selected="false" data-tab="logo" tabindex="-1">Logo</button>
+            <button role="tab" id="tab-btn-advanced" aria-controls="tab-advanced" aria-selected="false" data-tab="advanced" tabindex="-1">Advanced</button>
+          </div>
+
+          <div class="tab-panel" id="tab-frame" role="tabpanel" aria-labelledby="tab-btn-frame">
+            <div class="picker picker--frames" id="frame-picker" role="radiogroup" aria-label="Frame"></div>
+            <div class="row" id="frame-controls">
+              <label class="field field--grow">
+                <span class="label">Caption</span>
+                <input type="text" id="frame-text" maxlength="40" placeholder="SCAN ME" autocomplete="off">
+              </label>
+              <label class="field field--colour">
+                <span class="label">Frame</span>
+                <input type="color" id="frame-color" value="#4f46e5">
+              </label>
+              <label class="field field--colour">
+                <span class="label">Caption</span>
+                <input type="color" id="frame-text-color" value="#ffffff">
+              </label>
+            </div>
+            <p class="hint">Captions lift scan rates: people need to be told what they get. Keep it to a few words — “Menu”, “Free Wi-Fi”, “Pay here”.</p>
+          </div>
+
+          <div class="tab-panel" id="tab-style" role="tabpanel" aria-labelledby="tab-btn-style" hidden>
+            <p class="label label--block">Modules</p>
+            <div class="picker" id="module-picker" role="radiogroup" aria-label="Module shape"></div>
+            <p class="label label--block">Corner eyes</p>
+            <div class="picker" id="eye-picker" role="radiogroup" aria-label="Corner eye shape"></div>
+            <div class="row">
+              <label class="field field--colour">
+                <span class="label">Code</span>
+                <input type="color" id="fg-color" value="#101828">
+              </label>
+              <label class="field field--colour">
+                <span class="label">Background</span>
+                <input type="color" id="bg-color" value="#ffffff">
+              </label>
+              <label class="check field--grow">
+                <input type="checkbox" id="transparent">
+                <span>Transparent background <small>(PNG and SVG)</small></span>
+              </label>
+            </div>
+            <p class="label label--block">Tested combinations</p>
+            <div class="palette" id="palette" role="group" aria-label="Colour presets"></div>
+          </div>
+
+          <div class="tab-panel" id="tab-logo" role="tabpanel" aria-labelledby="tab-btn-logo" hidden>
+            <div class="logo-row">
+              <label class="file-btn">
+                <input type="file" id="logo-file" accept="image/png,image/jpeg,image/svg+xml,image/webp">
+                <span>Choose an image…</span>
+              </label>
+              <img id="logo-preview" alt="" hidden>
+              <button type="button" class="btn btn--ghost" id="logo-remove" hidden>Remove</button>
+            </div>
+            <label class="field">
+              <span class="label">Size <output id="logo-scale-out">20%</output></span>
+              <input type="range" id="logo-scale" min="8" max="30" step="1" value="20">
+            </label>
+            <label class="check">
+              <input type="checkbox" id="logo-plate" checked>
+              <span>Clear a padded area behind the logo <small>(recommended)</small></span>
+            </label>
+            <p class="hint">Your image stays on your device. Covering the middle costs error correction — the panel on the right warns you when you have gone too far. EPS is vector only, so a bitmap logo is left out of that one file.</p>
+          </div>
+
+          <div class="tab-panel" id="tab-advanced" role="tabpanel" aria-labelledby="tab-btn-advanced" hidden>
+            <div class="row">
+              <label class="field field--grow">
+                <span class="label">Error correction</span>
+                <select id="ecl">
+                  <option value="auto" selected>Automatic (recommended)</option>
+                  <option value="L">L — recovers about 7%</option>
+                  <option value="M">M — recovers about 15%</option>
+                  <option value="Q">Q — recovers about 25%</option>
+                  <option value="H">H — recovers about 30%</option>
+                </select>
+              </label>
+              <label class="field field--grow">
+                <span class="label">Quiet zone <output id="quiet-out">4 modules</output></span>
+                <input type="range" id="quiet" min="0" max="8" step="1" value="4">
+              </label>
+            </div>
+            <div class="row">
+              <label class="field field--grow">
+                <span class="label">Export size (bitmap formats)</span>
+                <select id="export-size">
+                  <option value="512">512 px</option>
+                  <option value="1024" selected>1024 px</option>
+                  <option value="2048">2048 px</option>
+                  <option value="4096">4096 px — poster</option>
+                </select>
+              </label>
+              <label class="field field--grow">
+                <span class="label">File name</span>
+                <input type="text" id="file-name" value="qr-code" maxlength="48" autocomplete="off" spellcheck="false">
+              </label>
+            </div>
+            <p class="hint">Automatic error correction uses the strongest level that still fits your data at the same code size, so you get extra robustness for free. Never go below a quiet zone of 4 modules: scanners use that empty margin to find the code.</p>
+          </div>
+        </section>
+      </div>
+
+      <aside class="col col--out">
+        <section class="card card--sticky" aria-labelledby="step3">
+          <h2 class="step" id="step3"><span class="step-num">3</span> Check and download</h2>
+
+          <div class="preview" id="preview-wrap">
+            <img id="preview" alt="Your QR code" width="512" height="512">
+            <p class="preview-empty" id="preview-empty">Fill in the form and your QR code appears here.</p>
+          </div>
+          <p class="hint hint--centre">Right-click the code to save it, or drag it straight into a document.</p>
+          <p class="label label--block">Format</p>
+
+          <div class="formats" id="format-picker" role="radiogroup" aria-label="File format"></div>
+          <button type="button" class="btn btn--primary btn--download" id="download" disabled>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 16.5v2a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-2"/></svg>
+            <span>Download <span id="download-format">PNG</span></span>
+          </button>
+          <p class="hint hint--centre" id="download-note">Pick a format to see it here.</p>
+
+          <div class="report" id="report" hidden>
+            <h3>Scan report</h3>
+            <dl id="report-list"></dl>
+            <ul class="warnings" id="warnings"></ul>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="prose" id="size">
+      <h2>How big should a QR code be?</h2>
+      <p>Almost every QR code that “does not work” is simply too small for the distance it is scanned from, or printed so small that the individual squares blur together. Two numbers settle it.</p>
+      <div class="rule">
+        <p class="rule-title">The 10:1 rule</p>
+        <p><strong>Width of the code ≥ scanning distance ÷ 10.</strong> A code read from one metre away needs to be at least 10 cm wide. Add a margin if people will scan it while walking, from a car, or in poor light — aim for distance ÷ 8.</p>
+      </div>
+      <div class="calc" id="calc">
+        <label class="field">
+          <span class="label">People will scan from</span>
+          <span class="calc-input">
+            <input type="number" id="calc-distance" value="100" min="1" max="5000" step="1">
+            <select id="calc-unit">
+              <option value="cm" selected>cm</option>
+              <option value="m">m</option>
+              <option value="in">inch</option>
+              <option value="ft">feet</option>
+            </select>
+          </span>
+        </label>
+        <div class="calc-out" id="calc-out" aria-live="polite"></div>
+      </div>
+      <div class="table-wrap"><table class="table">
+        <caption>Minimum printed width by scanning distance</caption>
+        <thead><tr><th scope="col">Scanned from</th><th scope="col">Minimum width</th><th scope="col">Comfortable</th><th scope="col">Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>10 cm</td><td>2 cm</td><td>2.5 cm</td><td>Business card, product label — never go under 2 cm</td></tr>
+          <tr><td>30 cm</td><td>3 cm</td><td>4 cm</td><td>Menu, flyer, packaging, letter</td></tr>
+          <tr><td>1 m</td><td>10 cm</td><td>13 cm</td><td>Poster in a shop window, table tent</td></tr>
+          <tr><td>2 m</td><td>20 cm</td><td>25 cm</td><td>Wall poster, exhibition stand</td></tr>
+          <tr><td>5 m</td><td>50 cm</td><td>63 cm</td><td>Banner, shop front</td></tr>
+          <tr><td>20 m</td><td>2 m</td><td>2.5 m</td><td>Billboard, building wrap</td></tr>
+        </tbody>
+      </table></div>
+      <h3>The smallest square matters more than the total size</h3>
+      <p>A QR code is a grid of modules. The more you encode, the more modules the code needs, and the smaller each one becomes at the same printed width. Keep every module at <strong>0.4 mm or larger</strong> for offset and digital printing; ask for 0.6 mm or more on cardboard, textile, thermal receipt paper and anything printed on a curved surface.</p>
+      <p>So the cheapest way to make a code easier to scan is to <strong>shorten the data</strong>. <code>example.com/x7</code> needs far fewer modules than a URL carrying three tracking parameters. Two more free wins: drop the <code>https://</code> only if you must (most scanners need it for links), and note that a URL typed in capitals — <code>EXAMPLE.COM/MENU</code> — encodes more compactly than lower case, because upper case fits the alphanumeric mode. Domains are case insensitive, so it still works.</p>
+    </section>
+
+    <section class="prose" id="contrast">
+      <h2>Colour and contrast</h2>
+      <p>A scanner does not see colours, it sees light and dark. The rules that follow from that are short:</p>
+      <ul class="list">
+        <li><strong>Dark code on a light background.</strong> Inverted codes (light on dark) are read by many phones but rejected by plenty of older scanners, kiosks and access-control readers. If you must invert, test the exact devices that will be used.</li>
+        <li><strong>Aim for a contrast ratio of at least 4:1, treat 3:1 as the hard floor.</strong> The panel next to your code shows the live ratio. Pale pastel on white and dark grey on black both fail here.</li>
+        <li><strong>Red, orange and yellow read as “light”</strong> to many older infrared and red-laser scanners. Dark blue, dark green, deep purple, near-black and brown are safe choices for the modules.</li>
+        <li><strong>No photographs or gradients behind the code.</strong> A flat panel behind the modules costs you nothing and prevents a whole class of failures.</li>
+        <li><strong>Matte, not glossy.</strong> Glossy laminate and glass throw back the phone’s own light; varnish a window around the code instead.</li>
+        <li><strong>Keep the quiet zone.</strong> Four empty modules on all sides. Text, a border or a photo edge inside that margin makes the code hard to find, even though the data is intact.</li>
+      </ul>
+      <p>Watch out for one more thing in print: <strong>ink spread</strong>. On absorbent stock the dark modules grow and swallow the light ones. If a supplier tells you the code came out “muddy”, print the modules slightly smaller rather than pushing the whole code up in size.</p>
+    </section>
+
+    <section class="prose" id="logos">
+      <h2>Logos and error correction</h2>
+      <p>Every QR code carries redundant data, so it survives damage. That is what makes a logo in the middle possible, and it is also the budget you spend when you add one.</p>
+      <div class="table-wrap"><table class="table">
+        <caption>Error correction levels</caption>
+        <thead><tr><th scope="col">Level</th><th scope="col">Recovers about</th><th scope="col">Data capacity</th><th scope="col">Use it for</th></tr></thead>
+        <tbody>
+          <tr><td>L</td><td>7%</td><td>Largest</td><td>Long URLs on clean screens, no logo</td></tr>
+          <tr><td>M</td><td>15%</td><td>—</td><td>The usual default for print without a logo</td></tr>
+          <tr><td>Q</td><td>25%</td><td>—</td><td>A small logo, or a surface that gets dirty or scratched</td></tr>
+          <tr><td>H</td><td>30%</td><td>Smallest</td><td>A logo of noticeable size, labels on boxes, outdoor use</td></tr>
+        </tbody>
+      </table></div>
+      <ul class="list">
+        <li>Cover <strong>no more than about 15% of the area</strong> with your logo, and raise the level to Q or H when you do.</li>
+        <li>Keep the <strong>three corner squares and the timing lines</strong> between them completely clear. They are how a scanner finds and aligns the code; no amount of error correction repairs those.</li>
+        <li>Put the logo in the <strong>centre</strong> and leave a small padded gap around it, so the scanner does not read the edge of your artwork as a module.</li>
+        <li>Error correction is a safety margin, not a feature to spend. A code that only just scans on your new phone will fail on a five-year-old one in a dim restaurant.</li>
+      </ul>
+    </section>
+
+    <section class="prose" id="print">
+      <h2>Print and test checklist</h2>
+      <ol class="list list--check">
+        <li>Scan the <strong>final artwork at final size</strong>, not the file on your monitor.</li>
+        <li>Test with at least <strong>two phones</strong>, one of them a few years old, and once in <strong>dim light</strong>.</li>
+        <li>Check the <strong>whole journey</strong>: does the page the code opens work on a phone, and does the Wi-Fi password still match?</li>
+        <li>Send <strong>vector</strong> files (SVG or EPS) to a printer. Ask them not to scale non-proportionally and not to apply a spot varnish over the code.</li>
+        <li>Tell people <strong>what they get</strong>. A caption such as “Menu” or “Free Wi-Fi” is worth more than any design trick.</li>
+        <li>Put the code <strong>where a phone can reach it</strong>: not above a shop window, not behind a counter, not on a moving vehicle.</li>
+        <li>Keep a <strong>text alternative</strong> nearby — a short URL, a phone number — for anyone who cannot or will not scan.</li>
+      </ol>
+    </section>
+
+    <section class="prose" id="formats">
+      <h2>Which download do you need?</h2>
+      <p>Click a format above the download button to see that exact file in the preview, then download it. PDF and EPS are documents rather than images, so browsers cannot show them inline — for those two the preview keeps showing the PNG while the download stays fully vector.</p>
+      <dl class="defs">
+        <dt>PNG</dt><dd>The safe default for screens, e-mail, slides and web pages. Sharp edges, no compression artefacts. Choose 2048 px or more if it will also be printed small.</dd>
+        <dt>PNG with a transparent background</dt><dd>Tick <em>Transparent background</em> under Shape &amp; colour. For placing the code on a coloured or textured surface — keep that surface light and flat, or you lose the contrast you need.</dd>
+        <dt>JPG</dt><dd>Only when a system insists on JPG. It cannot store transparency and its compression softens the edges of the modules, which is exactly the detail a scanner needs.</dd>
+        <dt>WebP</dt><dd>The same picture as PNG at roughly a third of the file size, with transparency. Ideal for your own website; less welcome in print shops and older software.</dd>
+        <dt>SVG</dt><dd>Vector, infinitely scalable, editable in Illustrator, Inkscape, Figma and Affinity. The best choice for print and large formats. Your logo travels inside the file.</dd>
+        <dt>PDF</dt><dd>Vector too, and the file most print shops actually ask for. It keeps the caption as real text in Helvetica and embeds your logo, so one file is enough to hand over.</dd>
+        <dt>EPS</dt><dd>Vector for older print and packaging workflows that still specify EPS. The caption uses Helvetica; a bitmap logo cannot be stored in it, so send the SVG or PDF when your design has one.</dd>
+      </dl>
+      <p>The list of bitmap formats depends on your browser: this page asks it what it can encode and only offers what really works. AVIF appears once your browser can write it — today most cannot, and a browser that is asked anyway quietly returns a PNG inside a file named <code>.avif</code>. GIF, BMP and TIFF are not offered: no browser encodes them, and none of them would beat PNG for a QR code.</p>
+    </section>
+
+    <section class="prose" id="faq">
+      <h2>Frequently asked questions</h2>
+
+      <details><summary>Are these QR codes really free, also for commercial use?</summary>
+        <p>Yes. What you create is yours: put it on products, packaging, menus and advertising without asking anyone. No account, no watermark, no scan limit, no expiry. The QR code format itself was made freely available by its inventor Denso Wave, and this site adds no conditions of its own.</p>
+      </details>
+
+      <details><summary>Do the codes expire or stop working?</summary>
+        <p>No. Your link or text is written into the pattern itself, so scanning never touches this site. If we disappeared tomorrow, every code you made here would keep working.</p>
+      </details>
+
+      <details><summary>Do you track scans or store what I type?</summary>
+        <p>No. There is no analytics, no cookie and no upload: the page is HTML, CSS and JavaScript that runs on your device. You can disconnect from the internet after the page loads and keep generating codes. That is also why there are no scan statistics — counting scans requires a server in the middle, and this site has none.</p>
+      </details>
+
+      <details><summary>Why are there no dynamic QR codes here?</summary>
+        <p>A dynamic code points at a redirect service so the destination can be changed later. That service must stay online and paid for, forever, or every printed code breaks — which is why so many of them are subscriptions. For the same flexibility without the dependency: point the code at a short path on your own domain, such as <code>example.com/m</code>, and redirect from there. You keep control and you can change the target whenever you want.</p>
+      </details>
+
+      <details><summary>Can I upload a PDF, a video or a gallery?</summary>
+        <p>Not here, because hosting your file would mean a server and a bill. Put the file on your own website, Google Drive, Dropbox or YouTube and make a <em>Link</em> code that points to it. Keep the link short: a shorter link means fewer modules and a code that scans more easily.</p>
+      </details>
+
+      <details><summary>Why does my code look different after a small edit?</summary>
+        <p>An encoder chooses between eight mask patterns, picking the one that avoids large same-coloured areas and shapes a scanner might confuse with the corner markers. Change a character or the error correction level and a different mask may win. Both versions scan to exactly the same content.</p>
+      </details>
+
+      <details><summary>Does the Wi-Fi code work on every phone?</summary>
+        <p>iOS 11 and later and Android 10 and later join a network straight from the camera. Older phones need a QR app that understands the Wi-Fi format. WPA2 and WPA3 networks work; enterprise networks with a user name and certificate cannot be expressed in a QR code.</p>
+      </details>
+
+      <details><summary>My code is not scanning. What now?</summary>
+        <p>Work through it in this order: is it big enough for the distance (the 10:1 rule); is the contrast at least 3:1 with a dark code on a light background; are all four sides of the quiet zone clear; is the logo smaller than 15% of the area with the corner squares untouched; is the surface matte and flat; and finally, is the destination itself working? In print, also check that nobody scaled the code non-proportionally.</p>
+      </details>
+    </section>
+
+    <section class="prose" id="open-source">
+      <h2>Open source, and why that matters here</h2>
+      <p>This whole site is a static page: one HTML file, one stylesheet and five small JavaScript files, with <strong>no dependencies and no build step</strong>. The QR encoder was written for this project and verified against an independent reference implementation across all 40 symbol versions and all four error correction levels.</p>
+      <p>You can read, audit, self-host, fork and re-use all of it:</p>
+      <p class="cta-row"><a class="btn btn--primary btn--wide" href="https://github.com/spidfire/qr-code-free-org" rel="noopener">github.com/spidfire/qr-code-free-org</a></p>
+      <h3>Licence</h3>
+      <p>The source code is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" rel="license noopener">Apache License 2.0</a> — use it commercially, modify it, ship it inside your own product, as long as you keep the notice and the licence text. The page text and documentation are offered under the same licence. QR Code is a registered trademark of Denso Wave Incorporated, which is not affiliated with this project; the symbol format itself is standardised as ISO/IEC 18004 and free to use. The QR codes <em>you</em> generate carry no licence from us at all.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>qr-code-free.org</strong> — a free QR code generator that runs entirely in your browser. No account, no tracking, no bill.</p>
+    <p><a href="https://github.com/spidfire/qr-code-free-org" rel="noopener">Source on GitHub</a> · Apache-2.0 · built with no third-party code</p>
+  </div>
+</footer>
+
+<canvas id="work" width="1" height="1" hidden></canvas>
+
+<script src="/assets/js/qr.js"></script>
+<script src="/assets/js/payloads.js"></script>
+<script src="/assets/js/scene.js"></script>
+<script src="/assets/js/renderers.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
