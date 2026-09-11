@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 22
       - name: Run the test suite
-        run: node --test test/
+        run: npm test          # a directory argument to --test needs Node 24+
 
   deploy:
     name: Deploy to GitHub Pages

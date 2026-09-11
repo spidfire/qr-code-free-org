@@ -10,7 +10,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test test/*.test.mjs",
     "images": "node tools/make-images.mjs",
     "serve": "python3 -m http.server 8080"
   },
